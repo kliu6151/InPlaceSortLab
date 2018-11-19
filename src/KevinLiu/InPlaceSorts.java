@@ -2,7 +2,7 @@ package KevinLiu;
 
 import java.util.Arrays;
 
-public class Algorithms {
+public class InPlaceSorts {
 
     public static void swapInt(int[] arr, int i, int j)
     {

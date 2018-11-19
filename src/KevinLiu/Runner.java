@@ -4,19 +4,22 @@ import java.util.Arrays;
 
 public class Runner {
     public static void main(String[] args) {
-        int[] arr = Algorithms.randIntArr(5);
+        long time = System.currentTimeMillis();
+        int[] arr = InPlaceSorts.randIntArr(500);
         System.out.println(Arrays.toString(arr));
-        Algorithms.insertionSort(arr);
+        InPlaceSorts.insertionSort(arr);
         System.out.println(Arrays.toString(arr));
+        time = System.currentTimeMillis() - time;
+        System.out.println("Time taken: " + time * 0.001 + " seconds");
         System.out.println("---------------");
-        double[] arrDouble = Algorithms.randDoubleArr(5);
+        double[] arrDouble = InPlaceSorts.randDoubleArr(500);
         System.out.println(Arrays.toString(arrDouble));
-        Algorithms.selectionSort(arrDouble);
+        InPlaceSorts.selectionSort(arrDouble);
         System.out.println(Arrays.toString(arrDouble));
         System.out.println("---------------");
         String[] arrString = {"always", "American","among","hi","beep","zzep","zoo","bye"};
         System.out.println(Arrays.toString(arrString));
-        Algorithms.bubbleSort(arrString);
+        InPlaceSorts.bubbleSort(arrString);
         System.out.println(Arrays.toString(arrString));
     }
 }
