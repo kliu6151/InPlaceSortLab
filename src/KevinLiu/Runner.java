@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Runner {
     public static void main(String[] args) {
-
+        /*
         long time = System.currentTimeMillis();
         int[] arr = InPlaceSorts.randIntArr(50000);
         System.out.println(Arrays.toString(arr) + "\n Processing...");
@@ -38,5 +38,10 @@ public class Runner {
         System.out.println(Arrays.toString(mergeArr) + "\n Processing...");
         InPlaceSorts.mergeSort(mergeArr);
         System.out.println(Arrays.toString(mergeArr) + "\n Done");
+        */
+        int[] quickSortArr = InPlaceSorts.randIntArr(50);
+        System.out.println(Arrays.toString(quickSortArr) + "\n Processing...");
+        InPlaceSorts.quickSort(quickSortArr,0,49);
+        System.out.println(Arrays.toString(quickSortArr) + "\n Done");
     }
 }
